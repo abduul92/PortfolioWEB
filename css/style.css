@@ -1,0 +1,380 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 20px;
+}
+
+a {
+    color: #383838;
+    text-decoration: none;
+}
+
+p {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+/* ---- Hilfsklasse ---- */
+
+
+.standard-container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.text-highlighted {
+     color: white;
+    font-size: 18px;
+}
+
+.text-highlighted-about {
+    color: white;
+    font-size: 40px;
+}
+
+
+/* --- Buttons --- */
+
+.btn {
+    display: block;
+    font-size: 20px;
+    background-color: #bdddd1;
+    color: #383838;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 15px 0px;
+}
+
+.btn:hover {
+    background-color: #383838;
+    color: white;
+}
+/* --- Navigationsliste --- */
+
+#main-nav {
+    background-color: #bdddd1;
+    
+    
+    
+}
+
+#main-nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#main-nav h1 {
+    float: left;
+    color: #383838;
+    padding-top: 20px;
+    
+    
+}
+
+#main-nav a {
+    color: #383838;
+    
+}
+
+#main-nav ul {
+    float: right;
+    list-style: none;
+}
+
+#main-nav ul li {
+    float: left;
+    
+}
+
+#main-nav ul li a {
+    display: block;
+    font-size: 24px;
+    padding: 25px;
+    text-align: center;
+}
+
+#main-nav ul li a:hover {
+    background-color: #383838;
+    color: white;
+    
+}
+
+#main-nav ul li a.active-page {
+    background-color: #383838;
+    color: white;
+    
+}
+
+/* --- Wilkommens Sektion --- */
+
+#Welcome {
+    background-image: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0, 0.2)), url(../img/Banner_Light.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+#Welcome::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#Welcome .Welcome-content {
+    float: right;
+    width: 70%;
+    padding: 130px 50px;
+
+}
+
+#Welcome .Welcome-img {
+    float: left;
+    width: 30%;
+    padding-top: 40px;
+}
+
+#Welcome .Welcome-img img {
+    width: 87%;
+    border-radius: 50%;
+}
+
+#Welcome .Welcome-content h2 {
+    color: #383838;
+    font-size: 40px;
+}
+
+#Welcome .Welcome-content p {
+    color: #383838;
+    font-size: 20px;
+}
+
+/* ---- About Sektion ---- */
+
+#about {
+    background-color: #505f59; /*--- #bdddd1 #585757 */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#about .about-content {
+    float: left;
+    width: 70%;
+    color: rgb(29, 29, 29);
+    padding: 20px;
+}
+
+#about .about-img {
+    float: left;
+    width: 30%;
+    padding: 20px;
+
+}
+
+#about .about-img img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+#about .about-content h2 {
+    font-size: 60px;
+}
+
+#about .about-content p {
+    font-size: 20px;
+}
+
+/* --- Datums  Skill Sektion --- */
+
+#Dates {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#Dates::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+#Dates .Date {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 35px;
+
+}
+
+#Dates .material-symbols-outlined {
+    font-size: 100px;
+    color: #bdddd1;
+}
+
+#Dates .Date h2 {
+    color: #383838;
+    font-size: 20px;
+}
+
+/* --- Galerie --- */
+
+#main-galerie .galerie {
+    text-align: center;
+    font-size: 60px;
+    color: #383838;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#main-galerie::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#main-galerie {
+    background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), url(../img/Banner_Light.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 2000px;
+}
+
+.masonryholder {
+    column-count: 4;
+    column-gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.masonryblock {
+    display: inline-block;
+    background: #bdddd1;
+    padding: 20px;
+    margin: 0 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.masonryblock img {
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .masonryholder {
+        column-count: 1;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .masonryholder {
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .masonryholder {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .masonryholder {
+        column-count: 4;
+    }
+}
+
+
+/* ------ Contact Heading Sektion ------ */
+
+#contact-heading {
+  background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0,0.6)),url(../img/Banner_Light.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+#contact-heading .heading-content {
+  color: white;
+  padding: 130px 0px;
+}
+
+#contact-heading .heading-content h2 {
+  font-size: 40px;
+}
+
+#contact-heading .heading-content p {
+  font-size: 20px;
+}
+
+/* ------ Contact Options Sektion ------ */
+
+#contact-options {
+  margin-top: -150px;
+  padding-bottom: 300px;
+}
+
+
+#contact-options:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#contact-options .contact-option {
+  float: left;
+  width: 31.33%;
+  margin: 1%;
+  text-align: center;
+  padding: 35px;
+  background-color: #3A3A3A;
+  min-height: 300px;
+  border-radius: 10px;
+}
+
+#contact-options .contact-option h3 {
+  font-size: 25px;
+  color: #bdddd1;
+  padding-top: 15px;
+}
+
+#contact-options .contact-option p {
+  color: white;
+  line-height: 1.7em;
+}
+
+#contact-options .material-symbols-outlined {
+  font-size: 50px;
+  color: white;
+}
+
+
+
+
+
+
+/* --- Footer --- */
+
+#main-footer {
+    background-color: #bdddd1;
+    min-height: 120px;
+    padding: 52px;
+}
+
+#main-footer p {
+    text-align: center;
+    color: #383838;
+}
+
