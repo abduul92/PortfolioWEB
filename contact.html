@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Nehme noch heute mit Abdullah Isbir Kontakt auf">
   <meta name="keywords" content="Abdullah Isbir Kontakt">
-  <title>Hilal Isbir-Tas und Abdullah Isbir Kontakt</title>
+  <title>Abdullah Isbir Kontakt</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
   <header>
@@ -16,8 +17,8 @@
       <div class="standard-container">
         <h1>Abdullah Isbir</h1>
         <ul>
-          <li><a href="/index.html">Startseite</a></li>
-          <li><a href="/projekte.html">Projekte</a></li>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="projekte.html">Projekte</a></li>
           <li><a class="active-page" href="contact.html">Kontakt</a></li>
         </ul>
       </div>
@@ -25,8 +26,8 @@
     <div id="contact-heading">
       <div class="standard-container">
         <div class="heading-content">
-          <h2><span class="text-highlighted-about">Kontakt aufnhemen</span></h2>
-          <p>Hast du noch offene Fragen? kontaktiere mich ganz unverbindlich.</p>
+          <h2><span class="text-highlighted-about">Kontakt aufnehmen</span></h2>
+          <p>Haben Sie noch offene Fragen? Kontaktieren Sie mich ganz unverbindlich.</p>
         </div>
       </div>
     </div>
@@ -35,27 +36,66 @@
   <section id="contact-options">
     <div class="standard-container">
       <div class="contact-option">
-        <span class="material-symbols-outlined">phone_in_talk</span>
+        <span class="material-symbols-outlined" aria-label="Telefon">phone_in_talk</span>
         <h3>Telefon</h3>
-        <p>Telefonnummer 0176/24313991</p>
+        <p>Erreichbar Mo-Fr 9-18 Uhr</p>
       </div>
       <div class="contact-option">
-        <span class="material-symbols-outlined">mail</span>
+        <span class="material-symbols-outlined" aria-label="E-Mail">mail</span>
         <h3>E-Mail</h3>
-        <p>Kontaktiere mich gerne über meine E-Mail Adresse <br> abdul-1992@hotmail.de</p>
+        <p>abdul-1992@hotmail.de <br>Ich antworte in der Regel innerhalb von 24 Stunden</p>
       </div>
       <div class="contact-option">
-        <span class="material-symbols-outlined">apartment</span>
-        <h3>Adresse</h3>
-        <p>Bekassinenweg 4, 44269 Dortmund</p>
+        <span class="material-symbols-outlined" aria-label="Standort">apartment</span>
+        <h3>Standort</h3>
+        <p>Dortmund, Nordrhein-Westfalen</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-form">
+    <div class="standard-container">
+      <h2>Nachricht senden</h2>
+      <p class="form-description">Füllen Sie das Formular aus und ich melde mich schnellstmöglich bei Ihnen.</p>
+      
+      <div class="form-container">
+        <div class="input-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name">
+        </div>
+
+        <div class="input-group">
+          <label for="email">E-Mail *</label>
+          <input type="email" id="email" name="email" required placeholder="ihre.email@beispiel.de">
+        </div>
+
+        <div class="input-group">
+          <label for="phone">Telefon (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer">
+        </div>
+
+        <div class="input-group">
+          <label for="subject">Betreff *</label>
+          <input type="text" id="subject" name="subject" required placeholder="Worum geht es?">
+        </div>
+
+        <div class="input-group">
+          <label for="message">Nachricht *</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Ihre Nachricht an mich..."></textarea>
+        </div>
+
+        <button type="submit" class="btn" onclick="sendMessage()">Nachricht senden</button>
+        <p class="form-note">* Pflichtfelder</p>
       </div>
     </div>
   </section>
 
   <footer id="main-footer">
-        <div class="standard-container"></div>
-        <p>&copy; 2026 Abdullah Isbir, All rights reserved  </p>
+    <div class="standard-container">
+      <p>&copy; 2026 Abdullah Isbir, All rights reserved</p>
+    </div>
+  </footer>
 
-    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
